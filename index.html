@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+      integrity="sha512-UJfAaOlIRtdR+0P6C3KUoTDAxVTuy3lnSXLyLKlHYJlcSU8Juge/mjeaxDNMlw9LgeIotgz5FP8eUQPhX1q10A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      body {
+        margin: 0;
+        background-color: aquamarine;
+      }
+      .row {
+        margin-top: 20vh;
+      }
+      .header {
+        margin-left: 225px;
+      }
+      h3 {
+        margin-top: 0;
+      }
+    </style>
+    <title>Secret Message</title>
+  </head>
+  <body>
+    <div class="row">
+      <h5 class="header">Send a secret message to your friend</h5>
+      <div class="col s8 offset-s2">
+        <div id="message-show" class="card-panel hide">
+          <h3></h3>
+          <div>
+            <a href="./index.html"> Create your own secret message</a>
+          </div>
+        </div>
+        <div id="message-form" class="card-panel">
+          <form>
+            <label>Enter a Secret Message </label>
+            <input type="text" id="message-input" />
+            <button type="submit" class="btn">Create a Link</button>
+          </form>
+        </div>
+        <div id="link-form" class="card-panel hide">
+          <div>
+            <label>Share link with your friend</label>
+            <input type="text" id="share-link" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
